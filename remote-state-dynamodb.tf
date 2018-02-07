@@ -1,3 +1,4 @@
+# Create a dynamodb table for state file locking
 resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
     name = "spoofedpacket-terraform-remote-state-lock"
     hash_key = "LockID"
